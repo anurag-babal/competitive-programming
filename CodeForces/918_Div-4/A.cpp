@@ -4,7 +4,12 @@ using namespace std;
 
 void solve(int t) {
   for (int test = 0; test < t; test++) {
-    
+    int a, b, c;
+    cin >> a >> b >> c;
+    if (a == b) cout << c;
+    else if (a == c) cout << b;
+    else cout << a;
+    cout << endl;
   }
 }
 
