@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int maxProfit(vector<int>& stocks) {
+int maxProfit(vector<int>& prices) {
   int max = 0, min = 0, profit = 0;
-  int n = stocks.size();
+  int n = prices.size();
   cout << n;
 
   for (int i = n-1; i >= 0; i--) {
-    if (stocks[i] > max) {
-      max = stocks[i];
+    if (prices[i] > max) {
+      max = prices[i];
     }
-    min = stocks[i];
+    min = prices[i];
     if((max - min) > profit) {
       profit = max - min;
     }
